@@ -13,19 +13,19 @@
   <form id="formularioPostulacion">
     <div>
       <label for="rut">Rut:</label>
-      <input type="text" id="rut" required>
+      <input type="text" id="rut" required data-parsley-error-message="El formato del RUT es incorrecto. Ejemplo: 12345678-9">
     </div>
     <div>
       <label for="apellidoPaterno">Apellido Paterno:</label>
-      <input type="text" id="apellidoPaterno" required>
+      <input type="text" id="apellidoPaterno" required data-parsley-error-message="Este campo debe tener entre 3 y 20 caracteres. Ejemplo: Pérez">
     </div>
     <div>
       <label for="apellidoMaterno">Apellido Materno:</label>
-      <input type="text" id="apellidoMaterno" required>
+      <input type="text" id="apellidoMaterno" required data-parsley-error-message="Este campo debe tener entre 3 y 20 caracteres. Ejemplo: González">
     </div>
     <div>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
+      <input type="text" id="nombre" required data-parsley-error-message="Este campo debe tener entre 3 y 20 caracteres. Ejemplo: Juan">
     </div>
     <div>
       <label for="fechaNacimiento">Fecha de Nacimiento:</label>
@@ -50,7 +50,7 @@
     </div>
     <div>
       <label for="celular">Celular:</label>
-      <input type="text" id="celular" required>
+      <input type="text" id="celular" required data-parsley-error-message="El celular debe tener entre 9 y 12 caracteres. Ejemplo: 987654321">
     </div>
     <div>
       <label for="profesion">Profesión:</label>
@@ -72,4 +72,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
