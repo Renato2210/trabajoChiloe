@@ -60,4 +60,8 @@ body {
     margin-top: 20px;
     resize: none;
   }
+
+  .parsley-errors-list li {
+    color: red;
+  }
   
