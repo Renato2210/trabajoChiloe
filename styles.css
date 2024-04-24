@@ -1,9 +1,13 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  background-image: url('img/chiloe.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
   
   .container {
     max-width: 600px;
