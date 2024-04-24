@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Postulación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Formulario de Postulación para Trabajo de Apoyo Ambiental en Chiloé</h2>
+
+<form id="formularioPostulacion">
+  <div>
+    <label for="rut">Rut:</label>
+    <input type="text" id="rut" required>
+  </div>
+  <div>
+    <label for="apellidoPaterno">Apellido Paterno:</label>
+    <input type="text" id="apellidoPaterno" required>
+  </div>
+  <div>
+    <label for="apellidoMaterno">Apellido Materno:</label>
+    <input type="text" id="apellidoMaterno" required>
+  </div>
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+  </div>
+  <div>
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaNacimiento" required>
+  </div>
+  <div>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required>
+  </div>
+  <div>
+    <label for="genero">Género:</label>
+    <select id="genero" required>
+      <option value="">Seleccione su género</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+  </div>
+  <div>
+    <label for="celular">Celular:</label>
+    <input type="text" id="celular" required>
+  </div>
+  <div>
+    <label for="profesion">Profesión:</label>
+    <input type="text" id="profesion" required>
+  </div>
+  <div>
+    <label for="motivacion">Motivación para Postular al Trabajo:</label>
+    <textarea id="motivacion" required></textarea>
+  </div>
+  <button type="submit">Enviar</button>
+  <button type="button" onclick="crearCarta()">Crear Carta</button>
+</form>
+
+<textarea id="carta" rows="5" cols="50"></textarea>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
